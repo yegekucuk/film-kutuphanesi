@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="706.0" style="-fx-background-color: #1f1d2b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movielibrary.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="245.0" layoutY="14.0" prefHeight="453.0" prefWidth="216.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="username" prefHeight="35.0" prefWidth="220.0" promptText="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" onAction="#login" prefHeight="35.0" prefWidth="220.0" promptText="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <Button mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #c16f00;" text="Login ">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label onMouseClicked="#createAnAccount" text="Create an account" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="label" textFill="RED" />
+         </children>
+      </VBox>
+      <Button layoutX="585.0" layoutY="446.0" mnemonicParsing="false" onAction="#about" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #c16f00;" text="About">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>
